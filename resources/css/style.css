@@ -14,6 +14,12 @@ a {
     font-style: italic
 }
 
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 header {
     background-color: #252525;
     padding: 8px 10px;
@@ -26,7 +32,6 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 
 #profilePicture,
 #profilePicture img {
@@ -64,8 +69,25 @@ header nav a:hover {
     transition: .2s;
 }
 
+.navegacion-header {
+    
+    transition: .5s;
+}
+@media (min-width:768px){
+    .navegacion-header a{
+        display: inline-block;
+    }
+    .navegacion-header {
+        max-height: 0;
+    }
+}
+
 .content {
     margin-top: 90px;
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -60px; /* Altura del footer */
+    padding-bottom: 60px; /* Altura del footer */
 }
 
 /* Estilo para el título principal fuera del encabezado */
@@ -76,12 +98,22 @@ header nav a:hover {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #232323;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Altura del footer */
     text-align: center;
-    padding: 10px;
+    line-height: 40px;
+    background-color: none;
+    text-align: center;
+    padding: 0px;
 
 }
+footer p {
+    color: rgba(255, 255, 255, 0.539);
+}
 
+   
 #goToTop {
     display: none;
     position: fixed;
