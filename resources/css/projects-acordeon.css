@@ -7,7 +7,8 @@
 
 .item {
     border: 0px solid #ccc;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .boton {
@@ -30,10 +31,10 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    padding: 10px;
+    margin-bottom: 100px;
     background-color: transparent;
     border: none;
-    margin: 0 10px
+    margin: 0 10px;
 }
 
 .p {
@@ -42,6 +43,8 @@
 
 .titulo {
     text-decoration: underline;
+    margin-top: 20px;
+
 }
 
 .contenido li {
@@ -69,6 +72,7 @@
 .contenido-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .texto {
@@ -116,7 +120,7 @@
     text-align: left;
     gap: 10px;
     width: 100%;
-
+    margin-top: 10px;
 }
 
 /* Estilo base para el iframe */
@@ -131,7 +135,7 @@ iframe {
     margin: 1px;
 }
 /* Media query para dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .acordeon {
         width: 100%;
         /* Ancho del 100% en dispositivos móviles */
@@ -140,7 +144,6 @@ iframe {
     }
 
     .acordeon,
-    .item,
     .boton,
     .contenido {
         margin: 0 auto;
@@ -149,6 +152,18 @@ iframe {
     iframe {
         max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+}
+@media (max-width: 768px) {
+    .contenido-flex {
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .texto {
+        padding-bottom: 30px;
+    }
+    .imagenes {
+        order: 2; /* Cambia el orden para que aparezca después de .texto */
     }
 }
 

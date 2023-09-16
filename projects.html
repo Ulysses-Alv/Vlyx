@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulises Alvarenga | Projects</title>
 
+    <link rel="stylesheet" href="resources/css/normalize.css">
     <link rel="stylesheet" href="resources/css/background.css">
     <link rel="stylesheet" href="resources/css/timeline.css">
     <link rel="stylesheet" href="resources/css/style.css">
@@ -31,7 +32,7 @@
         </a>
         <nav>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">About Me</a></li>
                 <li><a href="investigations.html">Investigations</a></li>
                 <li><a href="https://ulysses-alv.github.io/rootLink/">RootLink</a></li>
             </ul>
@@ -61,10 +62,11 @@
                                 <li>Platform: Windows.</li>
                                 <li>Other: GitHub, Git, Trello.</li>
                             </ul>
-
                             <div class="urls">
                                 <a href="https://farteamdev.blogspot.com/" target="_blank">Farmoxel Devlog </a>
                             </div>
+
+
                         </div>
                         <div class="imagenes">
                             <iframe
@@ -119,7 +121,7 @@
                     <div class="contenido-flex">
 
                         <div class="texto">
-                            <p>Game Programmer</p>
+                            <h3 class="titulo">Game Programmer</h3>
                             <p>January 2023</p>
                             <p>Simple 2D platform game for the GGJ 2023.</p>
 
@@ -146,21 +148,91 @@
 
                 </div>
             </div>
-            
-            <h3 class="divisor">//&nbsp; Solo Indie Projects
-                <hr />
-            </div>
         </div>
+
+        <div class="acordeon">
+
+            <h3 class="divisor">//&nbsp; Solo Projects
+                <hr />
+            </h3>
+
+            <div class="item">
+                <button class="boton">2.0 ChessGame</button>
+                <div class="contenido">
+                    <div class="contenido-flex">
+                        <div class="texto">
+                            <h3 class="titulo">Chess Game based on protochess from Raytran</h3>
+
+                            <p>July of 2023 - PRESENT</p>
+                            <p>2D Chess game with custom pieces and custom board.</p>
+
+                            <ul>
+                                <li>Language: C#.</li>
+                                <li>Engine: Unity.</li>
+                                <li>Platform: Windows / Android.</li>
+                                <li>Investigations: Movement Generation; Design Patterns; SOLID.</li>
+                            </ul>
+                            <div class="urls">
+                                <a href="https://github.com/Ulysses-Alv/Chess-Game" target="_blank">GitHub
+                                    Repository.</a>
+                            </div>
+
+
+                        </div>
+                        <div class="imagenes">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <button class="boton">Dice Game</button>
+                <div class="contenido">
+
+                    <div class="contenido-flex">
+                        <div class="texto">
+
+                            <h3 class="titulo"> Based on Knucklebones from <a href="https://www.cultofthelamb.com/">Cult
+                                    of the Lamb</a> </h3>
+
+                            <p>August of 2023 - PRESENT</p>
+                            <p> Simple 2D Game of Dices.
+                            </p>
+
+                            <ul>
+                                <li>Language: C#.</li>
+                                <li>Engine: Unity.</li>
+                                <li>Platform: Android.</li>
+                                <li>Investigations: ML-Agents, Design Patterns, SOLID.</li>
+                            </ul>
+                            <div class="urls">
+                                <a href="https://github.com/Ulysses-Alv/DiceGame" target="_blank">GitHub Repository.</a>
+                            </div>
+
+                        </div>
+
+                        <div class="imagenes">
+                            <img src="imgs/demo-ml-agents.mp3" alt="Demo-Ml-Agents">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
         <script src="resources/scripts/acordeon.js"></script>
-        
+
         <button onclick="goToTopFunction()" id="goToTop" title="Go to top">
             <img width="50" height="50" src="resources/imgs/up.png" alt="circled-chevron-up" /> </button>
         <script src="resources/scripts/buttonGoToTop.js"></script>
-        <footer>
-            <p>© Ulises Alvarenga 2023</p>
-        </footer>
 </body>
 
+
+<footer>
+    <p class="footerText">© Ulises Alvarenga 2023 - Website Under construction.</p>
+</footer>
 
 
 </html>
