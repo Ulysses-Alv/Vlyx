@@ -87,11 +87,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .imagenes img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
     margin: 10px;
 }
 
