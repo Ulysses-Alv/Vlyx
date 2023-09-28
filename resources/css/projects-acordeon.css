@@ -140,6 +140,18 @@ iframe {
     margin: 1px;
 }
 
+.jerico{
+}
+
+.farmoxel {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.gameboy{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .acordeon {
