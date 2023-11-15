@@ -10,7 +10,7 @@
   }
 
   .timeline {
-    margin-top: 90px;
+    margin-top: 150px;
     background: var(--primary-color);
     display: grid;
     place-content: center;

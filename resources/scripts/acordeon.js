@@ -1,5 +1,5 @@
 const botones = document.querySelectorAll('.boton');
-const contenidos = document.querySelectorAll('.contenido');
+const contenidos = document.querySelectorAll('.contenido, .contenido-skills');
 
 botones.forEach((boton, index) => {
     boton.addEventListener('click', () => {

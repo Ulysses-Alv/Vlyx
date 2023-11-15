@@ -17,6 +17,23 @@
     padding: 1rem;
     position: relative;
 }
+.skills-header-secundario {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    position: relative;
+
+}
+.skills-header-secundario::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: rgb(21, 161, 44);
+}
 
 .skills-header:after {
     content: '';
@@ -60,7 +77,7 @@
     transition: .5s;
 }
 
-.skill-box {
+.skill-box p{
     padding: 0.7rem;
     color: #ddd;
     cursor: pointer;

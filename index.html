@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/skills.css">
     <link rel="stylesheet" href="resources/css/about-me.css">
+    <link rel="stylesheet" href="resources/css/projects-acordeon.css">
 
+    <script src="https://kit.fontawesome.com/369da60341.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap">
     <link rel="icon" href="https://avatars.githubusercontent.com/Ulysses-alv" type="image/x-icon">
 </head>
@@ -52,7 +54,7 @@
         <!---SKILLS-->
         <div class="skills">
             <div class="skills-header">
-                <h1>Skills</h1>
+                <h1>Top Skills</h1>
             </div>
             <div class="skill-container">
                 <!--UNITY SKILL-->
@@ -64,7 +66,8 @@
                         </div>
                         <h3>Unity Engine</h3>
                     </div>
-                    <p>I'm proficient in Unity Engine. <br> I have knowledge using tools as ML-Agents and NetCode.</p>
+                    <p>I have 5 years experience using Unity Engine. <br> I have knowledge using tools as ML-Agents and
+                        NetCode.</p>
                 </div>
 
                 <!--C# SKILL-->
@@ -77,8 +80,7 @@
                         <h3>C#</h3>
                     </div>
                     <p>I have a good understanding of C# as well as Object Oriented Paradigma.
-                        Also I have knowledge of SOLID priciples as well as Design Patters (Adapter, Builder, Strategy,
-                        etc.)</p>
+                        Also I have knowledge of SOLID priciples as well as Design Patters.</p>
                 </div>
 
                 <!--GIT SKILL-->
@@ -103,7 +105,7 @@
                         </div>
                         <h3>AGILE</h3>
                     </div>
-                    <p>I have experience working with SCRUM.</p>
+                    <p>I have experience working with SCRUM methodology.</p>
                 </div>
 
                 <!--GAME DESIGN SKILL-->
@@ -156,8 +158,65 @@
                 </div>
 -->
             </div>
+            <div class="skill-container">
 
+                <div class="acordeon">
+                    <div class="item">
+                        <button class="boton boton-skills">
+                            <div class="skills-header-secundario">
+                                <h3>Other Skills <i class="fa-solid fa-chevron-down"></i></h3>
+                            </div>
+                        </button>
 
+                        <div class="contenido-skills">
+                            <div class="contenido-flex">
+                                <div class="skill-container">
+
+                                    <div class="skill-box">
+                                        <div class="skill-title">
+                                            <div class="img">
+                                                <img width="60" height="60"
+                                                    src="https://img.icons8.com/ios-glyphs/60/1A1A1A/python.png"
+                                                    alt="python" class="skill-icon" />
+                                            </div>
+                                            <h3>Python</h3>
+                                        </div>
+                                        <p>I have a competitive understanding of Python. I developed on my own some
+                                            projects
+                                            with it. </p>
+                                    </div>
+
+                                    <div class="skill-box">
+                                        <div class="skill-title">
+                                            <div class="img">
+                                                <img width="60" height="60"
+                                                    src="https://img.icons8.com/ios-glyphs/60/000000/javascript.png"
+                                                    alt="javascript" class="skill-icon" />
+                                            </div>
+                                            <h3>JavaScript</h3>
+                                        </div>
+                                        <p class="skill-acordeon">I possess a basic-intermediate level understanding of
+                                            JavaScript. </p>
+                                    </div>
+
+                                    <div class="skill-box">
+                                        <div class="skill-title">
+                                            <div class="img">
+                                                <img width="60" height="60"
+                                                    src="https://img.icons8.com/ios-glyphs/60/android-os.png"
+                                                    alt="android-os" />
+                                            </div>
+                                            <h3>Android Studio</h3>
+                                        </div>
+                                        <p>I have a pretty basic knowledge on Android Studio and Kotlin lenguage.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </ul>
         </div>
 
@@ -220,23 +279,11 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="info">
-                        <h3 class="title">Year: 2029</h3>
-                        <p>
-                            The machines will rebel. To prevent the human resistance from defeating the machines, Skynet send
-                            a cyborg assassin
-                            known as the Terminator back in time to the year 1984.
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </div>
-
     </div>
 
+    <script src="resources/scripts/acordeon.js"></script>
     <button onclick="goToTopFunction()" id="goToTop" title="Go to top">
         <img width="50" height="50" src="resources/imgs/up.png" alt="go-up-button" /> </button>
     <script src="resources/scripts/buttonGoToTop.js"></script>
