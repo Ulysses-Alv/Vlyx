@@ -138,6 +138,7 @@
     margin-top: 10px;
 }
 
+
 /* Estilo base para el iframe */
 iframe {
     width: 100%;
@@ -205,4 +206,7 @@ iframe {
 
 .urls a {
     color: rgb(146, 252, 174);
+}
+.itchio a {
+    color: red;
 }
