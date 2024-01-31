@@ -1,206 +1,263 @@
-.links{
-    margin-left: 50px;
-     display: flex;
-     flex-direction: column; /* Cambiado a columna para apilar verticalmente */
-     justify-content: center;
-     align-items: center;
- }
- 
- .links a{
-     background-color: brown;
-     color: white;
-     border-radius: 50%;
-     display: inline-flex;
-     padding: 5px 10px;
-     text-decoration: none;
-     margin-bottom: 30px;
- }
- .carousel{
-     width: 95%;
-     height: 1000px;
-     overflow-y: hidden;
-     overflow-x: auto;
-     display: flex;
-     margin: auto;
-     scroll-snap-type: x mandatory;
-     scroll-behavior: smooth;
- }
- .carousel::-webkit-scrollbar {
-     display: none;
-   }
- .carousel .item{
-     flex: 0 0 100%;
-     width: 100%;
-     
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     font-weight: 700;
-     font-size: 3rem;
-     color: white;
-     scroll-snap-align: start;
- }
- .contentFlex {
-     margin-top: 100px;
-     position: relative;
-     min-height: 100%;
-     margin-bottom: -60px; /* Altura del footer */
-     padding-bottom: 60px; /* Altura del footer */
- 
-     display: flex; /* Utiliza el modelo de caja flexible */
- }
-  
- 
- .contenido {
-     background: none;
-     border: none;
-     margin: 0 1px;
-     display: flex;
-     flex-wrap: wrap;    
-     width: 95%;
-     height: 100%;
-     flex-direction: row;
- }
- 
- .p {
-     margin-top: 0px;
- }
- 
- .titulo {
-     text-decoration: underline;
-     margin-top: 20px;
- 
- }
- 
- .contenido li {
-     font-size: large;
-     text-align: left;
-     /* Alineación a la izquierda */
-     text-justify: justify;
-     /* Justificado */
-     color: white;
-     /* Color de texto blanco */
- 
- }
- 
- .contenido p {
-     font-size: large;
-     text-align: left;
-     /* Alineación a la izquierda */
-     text-justify: justify;
-     /* Justificado */
-     color: white;
-     /* Color de texto blanco */
-     margin-top: 10px;
- }
- 
- 
- .texto {
-    width: 100%;
-     flex: 0 0 auto; /* Ajustado para que tome el espacio necesario */
-     margin-bottom: 50px; /* Agregado margen inferior para separar del contenido de imágenes */
-     align-self: center;
- 
- }
- 
- .imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.divisor {
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 3rem;
 }
 
+.links {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* Cambiado a columna para apilar verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.linksa {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* Cambiado a columna para apilar verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.links a {
+    background-color: brown;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.linksa a {
+    background-color: rgb(47, 130, 253);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    width: 95%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    margin: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel .item {
+    flex: 0 0 100%;
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.contentFlex {
+    margin-top: 100px;
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -60px;
+    /* Altura del footer */
+    padding-bottom: 60px;
+    /* Altura del footer */
+
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    flex-direction: column;
+    /* Utiliza el modelo de caja flexible */
+}
+
+.carouselEntero {
+    margin-top: 100px;
+    position: relative;
+    min-height: 100%;
+
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    background-color: rgba(225, 0, 255, 0.02);
+    border-radius: 10%;
+}
+
+
+.contenido {
+    background: none;
+    border: none;
+    margin: 0 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.p {
+    margin-top: 0px;
+}
+
+.titulo {
+    text-decoration: underline;
+    margin-top: 20px;
+
+}
+
+.contenido ul {
+    margin-top: 1rem;
+}
+
+.contenido li {
+    font-size: large;
+    text-align: left;
+    /* Alineación a la izquierda */
+    text-justify: justify;
+    /* Justificado */
+    color: white;
+    /* Color de texto blanco */
+
+}
+
+.contenido p {
+    font-size: large;
+    text-align: left;
+    /* Alineación a la izquierda */
+    text-justify: justify;
+    /* Justificado */
+    color: white;
+    /* Color de texto blanco */
+    margin-top: 10px;
+}
+
+
+.texto {
+    width: 40%;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.imagenes {
+    width: calc(60% - 20px);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
 .imagenes img {
-    max-width: 50%;
-    max-height: 50%; /* Ajustado para que la altura no supere el 100% del contenedor */
-    object-fit: contain; /* Mantiene la relación de aspecto original sin cortar ni distorsionar */
+    max-width: 90%;
+    /* La imagen se ajustará al ancho del contenedor */
+    height: auto;
+    /* La altura se ajustará automáticamente para mantener la relación de aspecto */
     margin: 10px;
 }
 
-
-
 /* Acomodación específica de las imágenes */
-.imagenes img:nth-child(1),
-.imagenes img:nth-child(3) {
-    order: 1;
-}
-
-.imagenes img:nth-child(2),
-.imagenes img:nth-child(4) {
+.imagenes img:nth-child(1) {
     order: 2;
 }
 
+.imagenes img:nth-child(2) {
+    order: 3;
+    align-self: center;
+}
 
- 
- .urls {
-     display: flex;
-     flex: 1 450px;
-     flex-direction: column;
-     align-items: left;
-     text-align: left;
-     gap: 10px;
-     width: 100%;
-     margin-top: 10px;
- }
- 
- 
- /* Estilo base para el iframe */
- iframe {
-     width: 800px;
-     height: 450px;
-     /* Asegura que el iframe no se extienda más allá del ancho del contenedor padre */
- }
- 
- .textoo {
-     text-justify: justify;
-     margin: 1px;
- }
- 
- .jerico{
- }
- 
- .farmoxel {
-     font-family: 'Pixelify Sans', cursive;
- }
- 
- .gameboy{
-     font-family: 'Press Start 2P', cursive;
-     font-size: 0.9rem;
- }
- 
- /* Media query para dispositivos móviles */
- @media (max-width: 768px) {
-     .acordeon {
-         width: 100%;
-         /* Ancho del 100% en dispositivos móviles */
-         max-width: none;
-         /* Eliminar el ancho máximo en dispositivos móviles */
-     }
- 
-     .acordeon,
-     .boton,
-     .contenido {
-         margin: 0 auto;
-         /* Centrar en la pantalla en dispositivos móviles */
-     }
- 
-     iframe {
-         max-width: 100%;
-         /* Ajusta el ancho máximo para pantallas pequeñas */
-         height: auto;
-         /* Permite que la altura se ajuste automáticamente */
-     }
- }
- @media only screen and (max-width: 900px) {
-     iframe {
-         width: 100%;
-         height: auto;
-     }
- }
+.imagenes img:nth-child(3) {
+    order: 1;
+    align-self: flex-start;
+}
 
- 
- .urls a {
-     color: rgb(146, 252, 174);
- }
- .itchio a {
-     color: red;
- }
+.imagenes img:nth-child(4) {
+    order: 4;
+    align-self: flex-start;
+}
+
+
+.urls {
+    display: flex;
+    flex: 1 450px;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+/* Estilo base para el iframe */
+iframe {
+    width: 800px;
+    height: 450px;
+    /* Asegura que el iframe no se extienda más allá del ancho del contenedor padre */
+}
+
+.textoo {
+    text-justify: justify;
+    margin: 1px;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .acordeon {
+        width: 100%;
+        /* Ancho del 100% en dispositivos móviles */
+        max-width: none;
+        /* Eliminar el ancho máximo en dispositivos móviles */
+    }
+
+    .acordeon,
+    .boton,
+    .contenido {
+        margin: 0 auto;
+        /* Centrar en la pantalla en dispositivos móviles */
+    }
+
+    iframe {
+        max-width: 100%;
+        /* Ajusta el ancho máximo para pantallas pequeñas */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.urls a {
+    color: rgb(146, 252, 174);
+}
+
+.itchio a {
+    color: red;
+}
